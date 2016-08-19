@@ -1,0 +1,120 @@
+[2016-08-19 13:34:15] production.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in C:\xampp\htdocs\Proyecto\bootstrap\compiled.php:5751
+Stack trace:
+#0 C:\xampp\htdocs\Proyecto\bootstrap\compiled.php(5073): Illuminate\Routing\RouteCollection->match(Object(Illuminate\Http\Request))
+#1 C:\xampp\htdocs\Proyecto\bootstrap\compiled.php(5061): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 C:\xampp\htdocs\Proyecto\bootstrap\compiled.php(5053): Illuminate\Routing\Router->dispatchToRoute(Object(Illuminate\Http\Request))
+#3 C:\xampp\htdocs\Proyecto\bootstrap\compiled.php(715): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#4 C:\xampp\htdocs\Proyecto\bootstrap\compiled.php(696): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#5 C:\xampp\htdocs\Proyecto\bootstrap\compiled.php(7825): Illuminate\Foundation\Application->handle(Object(Illuminate\Http\Request), 1, true)
+#6 C:\xampp\htdocs\Proyecto\bootstrap\compiled.php(8432): Illuminate\Session\Middleware->handle(Object(Illuminate\Http\Request), 1, true)
+#7 C:\xampp\htdocs\Proyecto\bootstrap\compiled.php(8379): Illuminate\Cookie\Queue->handle(Object(Illuminate\Http\Request), 1, true)
+#8 C:\xampp\htdocs\Proyecto\bootstrap\compiled.php(11088): Illuminate\Cookie\Guard->handle(Object(Illuminate\Http\Request), 1, true)
+#9 C:\xampp\htdocs\Proyecto\bootstrap\compiled.php(657): Stack\StackedHttpKernel->handle(Object(Illuminate\Http\Request))
+#10 C:\xampp\htdocs\Proyecto\public\index.php(49): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2016-08-19 13:36:16] production.ERROR: exception 'InvalidArgumentException' with message 'View [index] not found.' in C:\xampp\htdocs\Proyecto\bootstrap\compiled.php:9554
+Stack trace:
+#0 C:\xampp\htdocs\Proyecto\bootstrap\compiled.php(9527): Illuminate\View\FileViewFinder->findInPaths('index', Array)
+#1 C:\xampp\htdocs\Proyecto\vendor\laravel\framework\src\Illuminate\View\Factory.php(124): Illuminate\View\FileViewFinder->find('index')
+#2 C:\xampp\htdocs\Proyecto\bootstrap\compiled.php(3267): Illuminate\View\Factory->make('index')
+#3 C:\xampp\htdocs\Proyecto\app\routes.php(16): Illuminate\Support\Facades\Facade::__callStatic('make', Array)
+#4 C:\xampp\htdocs\Proyecto\app\routes.php(16): Illuminate\Support\Facades\View::make('index')
+#5 [internal function]: {closure}()
+#6 C:\xampp\htdocs\Proyecto\bootstrap\compiled.php(5398): call_user_func_array(Object(Closure), Array)
+#7 C:\xampp\htdocs\Proyecto\bootstrap\compiled.php(5065): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#8 C:\xampp\htdocs\Proyecto\bootstrap\compiled.php(5053): Illuminate\Routing\Router->dispatchToRoute(Object(Illuminate\Http\Request))
+#9 C:\xampp\htdocs\Proyecto\bootstrap\compiled.php(715): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#10 C:\xampp\htdocs\Proyecto\bootstrap\compiled.php(696): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#11 C:\xampp\htdocs\Proyecto\bootstrap\compiled.php(7825): Illuminate\Foundation\Application->handle(Object(Illuminate\Http\Request), 1, true)
+#12 C:\xampp\htdocs\Proyecto\bootstrap\compiled.php(8432): Illuminate\Session\Middleware->handle(Object(Illuminate\Http\Request), 1, true)
+#13 C:\xampp\htdocs\Proyecto\bootstrap\compiled.php(8379): Illuminate\Cookie\Queue->handle(Object(Illuminate\Http\Request), 1, true)
+#14 C:\xampp\htdocs\Proyecto\bootstrap\compiled.php(11088): Illuminate\Cookie\Guard->handle(Object(Illuminate\Http\Request), 1, true)
+#15 C:\xampp\htdocs\Proyecto\bootstrap\compiled.php(657): Stack\StackedHttpKernel->handle(Object(Illuminate\Http\Request))
+#16 C:\xampp\htdocs\Proyecto\public\index.php(49): Illuminate\Foundation\Application->run()
+#17 {main} [] []
+[2016-08-19 14:24:22] production.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'main(): Failed opening required 'C:\xampp\htdocs\Proyecto\app\views/../bootstrap/autoload.php' (include_path='C:\xampp\htdocs\Proyecto\vendor/phpseclib/phpseclib/phpseclib;.;C:\xampp\php\PEAR')' in C:\xampp\htdocs\Proyecto\app\views\index.php:21
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2016-08-19 14:24:39] production.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'main(): Failed opening required 'C:\xampp\htdocs\Proyecto\app\views/../bootstrap/autoload.php' (include_path='C:\xampp\htdocs\Proyecto\vendor/phpseclib/phpseclib/phpseclib;.;C:\xampp\php\PEAR')' in C:\xampp\htdocs\Proyecto\app\views\index.php:21
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2016-08-19 14:40:29] production.ERROR: exception 'InvalidArgumentException' with message 'View [sign-in] not found.' in C:\xampp\htdocs\Proyecto\bootstrap\compiled.php:9554
+Stack trace:
+#0 C:\xampp\htdocs\Proyecto\bootstrap\compiled.php(9527): Illuminate\View\FileViewFinder->findInPaths('sign-in', Array)
+#1 C:\xampp\htdocs\Proyecto\vendor\laravel\framework\src\Illuminate\View\Factory.php(124): Illuminate\View\FileViewFinder->find('sign-in')
+#2 C:\xampp\htdocs\Proyecto\bootstrap\compiled.php(3267): Illuminate\View\Factory->make('sign-in')
+#3 C:\xampp\htdocs\Proyecto\app\routes.php(16): Illuminate\Support\Facades\Facade::__callStatic('make', Array)
+#4 C:\xampp\htdocs\Proyecto\app\routes.php(16): Illuminate\Support\Facades\View::make('sign-in')
+#5 [internal function]: {closure}()
+#6 C:\xampp\htdocs\Proyecto\bootstrap\compiled.php(5398): call_user_func_array(Object(Closure), Array)
+#7 C:\xampp\htdocs\Proyecto\bootstrap\compiled.php(5065): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#8 C:\xampp\htdocs\Proyecto\bootstrap\compiled.php(5053): Illuminate\Routing\Router->dispatchToRoute(Object(Illuminate\Http\Request))
+#9 C:\xampp\htdocs\Proyecto\bootstrap\compiled.php(715): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#10 C:\xampp\htdocs\Proyecto\bootstrap\compiled.php(696): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#11 C:\xampp\htdocs\Proyecto\bootstrap\compiled.php(7825): Illuminate\Foundation\Application->handle(Object(Illuminate\Http\Request), 1, true)
+#12 C:\xampp\htdocs\Proyecto\bootstrap\compiled.php(8432): Illuminate\Session\Middleware->handle(Object(Illuminate\Http\Request), 1, true)
+#13 C:\xampp\htdocs\Proyecto\bootstrap\compiled.php(8379): Illuminate\Cookie\Queue->handle(Object(Illuminate\Http\Request), 1, true)
+#14 C:\xampp\htdocs\Proyecto\bootstrap\compiled.php(11088): Illuminate\Cookie\Guard->handle(Object(Illuminate\Http\Request), 1, true)
+#15 C:\xampp\htdocs\Proyecto\bootstrap\compiled.php(657): Stack\StackedHttpKernel->handle(Object(Illuminate\Http\Request))
+#16 C:\xampp\htdocs\Proyecto\public\index.php(49): Illuminate\Foundation\Application->run()
+#17 {main} [] []
+[2016-08-19 14:45:44] production.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in C:\xampp\htdocs\Proyecto\bootstrap\compiled.php:5751
+Stack trace:
+#0 C:\xampp\htdocs\Proyecto\bootstrap\compiled.php(5073): Illuminate\Routing\RouteCollection->match(Object(Illuminate\Http\Request))
+#1 C:\xampp\htdocs\Proyecto\bootstrap\compiled.php(5061): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 C:\xampp\htdocs\Proyecto\bootstrap\compiled.php(5053): Illuminate\Routing\Router->dispatchToRoute(Object(Illuminate\Http\Request))
+#3 C:\xampp\htdocs\Proyecto\bootstrap\compiled.php(715): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#4 C:\xampp\htdocs\Proyecto\bootstrap\compiled.php(696): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#5 C:\xampp\htdocs\Proyecto\bootstrap\compiled.php(7825): Illuminate\Foundation\Application->handle(Object(Illuminate\Http\Request), 1, true)
+#6 C:\xampp\htdocs\Proyecto\bootstrap\compiled.php(8432): Illuminate\Session\Middleware->handle(Object(Illuminate\Http\Request), 1, true)
+#7 C:\xampp\htdocs\Proyecto\bootstrap\compiled.php(8379): Illuminate\Cookie\Queue->handle(Object(Illuminate\Http\Request), 1, true)
+#8 C:\xampp\htdocs\Proyecto\bootstrap\compiled.php(11088): Illuminate\Cookie\Guard->handle(Object(Illuminate\Http\Request), 1, true)
+#9 C:\xampp\htdocs\Proyecto\bootstrap\compiled.php(657): Stack\StackedHttpKernel->handle(Object(Illuminate\Http\Request))
+#10 C:\xampp\htdocs\Proyecto\public\index.php(49): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2016-08-19 14:45:51] production.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'main(): Failed opening required 'C:\xampp\htdocs\Proyecto\app\views/../bootstrap/autoload.php' (include_path='C:\xampp\htdocs\Proyecto\vendor/phpseclib/phpseclib/phpseclib;.;C:\xampp\php\PEAR')' in C:\xampp\htdocs\Proyecto\app\views\index.php:21
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2016-08-19 14:45:56] production.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'main(): Failed opening required 'C:\xampp\htdocs\Proyecto\app\views/../bootstrap/autoload.php' (include_path='C:\xampp\htdocs\Proyecto\vendor/phpseclib/phpseclib/phpseclib;.;C:\xampp\php\PEAR')' in C:\xampp\htdocs\Proyecto\app\views\index.php:21
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2016-08-19 14:46:29] production.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'main(): Failed opening required 'C:\xampp\htdocs\Proyecto\app\views/../bootstrap/autoload.php' (include_path='C:\xampp\htdocs\Proyecto\vendor/phpseclib/phpseclib/phpseclib;.;C:\xampp\php\PEAR')' in C:\xampp\htdocs\Proyecto\app\views\index.php:21
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2016-08-19 14:46:30] production.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'main(): Failed opening required 'C:\xampp\htdocs\Proyecto\app\views/../bootstrap/autoload.php' (include_path='C:\xampp\htdocs\Proyecto\vendor/phpseclib/phpseclib/phpseclib;.;C:\xampp\php\PEAR')' in C:\xampp\htdocs\Proyecto\app\views\index.php:21
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2016-08-19 14:46:30] production.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'main(): Failed opening required 'C:\xampp\htdocs\Proyecto\app\views/../bootstrap/autoload.php' (include_path='C:\xampp\htdocs\Proyecto\vendor/phpseclib/phpseclib/phpseclib;.;C:\xampp\php\PEAR')' in C:\xampp\htdocs\Proyecto\app\views\index.php:21
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2016-08-19 14:46:30] production.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'main(): Failed opening required 'C:\xampp\htdocs\Proyecto\app\views/../bootstrap/autoload.php' (include_path='C:\xampp\htdocs\Proyecto\vendor/phpseclib/phpseclib/phpseclib;.;C:\xampp\php\PEAR')' in C:\xampp\htdocs\Proyecto\app\views\index.php:21
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2016-08-19 14:46:57] production.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'main(): Failed opening required 'C:\xampp\htdocs\Proyecto\app\views/../bootstrap/autoload.php' (include_path='C:\xampp\htdocs\Proyecto\vendor/phpseclib/phpseclib/phpseclib;.;C:\xampp\php\PEAR')' in C:\xampp\htdocs\Proyecto\app\views\index.php:21
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2016-08-19 14:46:58] production.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'main(): Failed opening required 'C:\xampp\htdocs\Proyecto\app\views/../bootstrap/autoload.php' (include_path='C:\xampp\htdocs\Proyecto\vendor/phpseclib/phpseclib/phpseclib;.;C:\xampp\php\PEAR')' in C:\xampp\htdocs\Proyecto\app\views\index.php:21
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2016-08-19 14:46:59] production.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'main(): Failed opening required 'C:\xampp\htdocs\Proyecto\app\views/../bootstrap/autoload.php' (include_path='C:\xampp\htdocs\Proyecto\vendor/phpseclib/phpseclib/phpseclib;.;C:\xampp\php\PEAR')' in C:\xampp\htdocs\Proyecto\app\views\index.php:21
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2016-08-19 14:46:59] production.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'main(): Failed opening required 'C:\xampp\htdocs\Proyecto\app\views/../bootstrap/autoload.php' (include_path='C:\xampp\htdocs\Proyecto\vendor/phpseclib/phpseclib/phpseclib;.;C:\xampp\php\PEAR')' in C:\xampp\htdocs\Proyecto\app\views\index.php:21
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2016-08-19 14:47:01] production.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'main(): Failed opening required 'C:\xampp\htdocs\Proyecto\app\views/../bootstrap/autoload.php' (include_path='C:\xampp\htdocs\Proyecto\vendor/phpseclib/phpseclib/phpseclib;.;C:\xampp\php\PEAR')' in C:\xampp\htdocs\Proyecto\app\views\index.php:21
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
