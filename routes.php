@@ -19,3 +19,6 @@ Route::get('home', function()
 {
 	return View::make('home');
 });
+// -------------------------USUARIOS---------------------------
+Route::get('usuarios', 'UsuarioController@mostrar');
+Route::get('crearUsuarios', 'UsuarioController@formulario');

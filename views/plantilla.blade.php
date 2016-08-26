@@ -12,7 +12,7 @@
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&subset=latin,cyrillic-ext" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" type="text/css">
-
+    <link href="plugins/bootstrap-select/css/bootstrap-select.css" rel="stylesheet" />
     <!-- Bootstrap Core Css -->
     <link href="plugins/bootstrap/css/bootstrap.css" rel="stylesheet">
 
@@ -31,6 +31,9 @@
     <!-- Custom Css -->
     <link href="css/style.css" rel="stylesheet">
 
+    <!-- JQuery DataTable Css -->
+    <link href="plugins/jquery-datatable/skin/bootstrap/css/dataTables.bootstrap.css" rel="stylesheet">
+
     <!-- AdminBSB Themes. You can choose a theme from css/themes instead of get all themes -->
     <link href="css/themes/all-themes.css" rel="stylesheet" />
 </head>
@@ -44,7 +47,7 @@
                     <circle cx="37.5" cy="37.5" r="33.5" class="pl-red" stroke-width="4" />
                 </svg>
             </div>
-            <p>Por favor espere...</p>
+            <p>Por favor esperar...</p>
         </div>
     </div>
     <!-- #END# Page Loader -->
@@ -54,11 +57,11 @@
     <!-- Search Bar -->
     <div class="search-bar">
         <div class="search-icon">
-            <i class="material-icons">Buscar</i>
+            <i class="material-icons">search</i>
         </div>
         <input type="text" placeholder="START TYPING...">
         <div class="close-search">
-            <i class="material-icons">Cerrar</i>
+            <i class="material-icons">close</i>
         </div>
     </div>
     <!-- #END# Search Bar -->
@@ -78,11 +81,11 @@
                     <!-- Notifications -->
                     <li class="dropdown">
                         <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button">
-                            <i class="material-icons">notificaciones</i>
+                            <i class="material-icons">notifications</i>
                             <span class="label-count">7</span>
                         </a>
                         <ul class="dropdown-menu">
-                            <li class="header">NOTIFICATIONES</li>
+                            <li class="header">NOTIFICACIONES</li>
                             <li class="body">
                                 <ul class="menu">
                                     <li>
@@ -179,7 +182,7 @@
                                 </ul>
                             </li>
                             <li class="footer">
-                                <a href="javascript:void(0);">View All Notifications</a>
+                                <a href="javascript:void(0);">Ver todas las  Notificacions</a>
                             </li>
                         </ul>
                     </li>
@@ -299,26 +302,26 @@
                 <ul class="list">
                     <li class="header">MAIN NAVIGATION</li>
                     <li class="active">
-                        <a href="index.html">
+                        <a href="home">
                             <i class="material-icons">home</i>
                             <span>Inicio</span>
                         </a>
                     </li>
                     <li>
-                        <a href="pages/typography.html">
-                            <i class="material-icons">text_fields</i>
+                        <a href="usuarios">
+                            <i class="material-icons">account_circle</i>
                             <span>Usuarios</span>
                         </a>
                     </li>
                     <li>
-                        <a href="pages/helper-classes.html">
-                            <i class="material-icons">layers</i>
+                        <a href="equipos">
+                            <i class="material-icons">computer</i>
                             <span>Equipos</span>
                         </a>
                     </li>
                     <li>
-                        <a href="javascript:void(0);" class="menu-toggle">
-                            <i class="material-icons">widgets</i>
+                        <a href="vehiculos" class="menu-toggle">
+                            <i class="material-icons">directions_car</i>
                             <span>Vehiculos</span>
                         </a>
                         <ul class="ml-menu">
@@ -363,8 +366,8 @@
                         </ul>
                     </li>
                     <li>
-                        <a href="javascript:void(0);" class="menu-toggle">
-                            <i class="material-icons">swap_calls</i>
+                        <a href="operarios" class="menu-toggle">
+                           <i class="material-icons">group</i>
                             <span>Operarios</span>
                         </a>
                         <ul class="ml-menu">
@@ -441,7 +444,7 @@
                         </ul>
                     </li>
                     <li>
-                        <a href="javascript:void(0);" class="menu-toggle">
+                        <a href="ingresos" class="menu-toggle">
                             <i class="material-icons">assignment</i>
                             <span>Ingresos</span>
                         </a>
@@ -467,8 +470,8 @@
                         </ul>
                     </li>
                     <li>
-                        <a href="javascript:void(0);" class="menu-toggle">
-                            <i class="material-icons">view_list</i>
+                        <a href="salidas" class="menu-toggle">
+                           <i class="material-icons">keyboard_tab</i>
                             <span>Salidas</span>
                         </a>
                         <ul class="ml-menu">
@@ -483,164 +486,16 @@
                             </li>
                         </ul>
                     </li>
-                    <li>
-                        <a href="javascript:void(0);" class="menu-toggle">
-                            <i class="material-icons">perm_media</i>
-                            <span>Medias</span>
-                        </a>
-                        <ul class="ml-menu">
-                            <li>
-                                <a href="pages/medias/image-gallery.html">Image Gallery</a>
-                            </li>
-                            <li>
-                                <a href="pages/medias/carousel.html">Carousel</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="javascript:void(0);" class="menu-toggle">
-                            <i class="material-icons">pie_chart</i>
-                            <span>Charts</span>
-                        </a>
-                        <ul class="ml-menu">
-                            <li>
-                                <a href="pages/charts/morris.html">Morris</a>
-                            </li>
-                            <li>
-                                <a href="pages/charts/flot.html">Flot</a>
-                            </li>
-                            <li>
-                                <a href="pages/charts/chartjs.html">ChartJS</a>
-                            </li>
-                            <li>
-                                <a href="pages/charts/sparkline.html">Sparkline</a>
-                            </li>
-                            <li>
-                                <a href="pages/charts/jquery-knob.html">Jquery Knob</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="javascript:void(0);" class="menu-toggle">
-                            <i class="material-icons">content_copy</i>
-                            <span>Example Pages</span>
-                        </a>
-                        <ul class="ml-menu">
-                            <li>
-                                <a href="pages/examples/sign-in.html">Sign In</a>
-                            </li>
-                            <li>
-                                <a href="pages/examples/sign-up.html">Sign Up</a>
-                            </li>
-                            <li>
-                                <a href="pages/examples/forgot-password.html">Forgot Password</a>
-                            </li>
-                            <li>
-                                <a href="pages/examples/blank.html">Blank Page</a>
-                            </li>
-                            <li>
-                                <a href="pages/examples/404.html">404 - Not Found</a>
-                            </li>
-                            <li>
-                                <a href="pages/examples/500.html">500 - Server Error</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="javascript:void(0);" class="menu-toggle">
-                            <i class="material-icons">map</i>
-                            <span>Maps</span>
-                        </a>
-                        <ul class="ml-menu">
-                            <li>
-                                <a href="pages/maps/google.html">Google Map</a>
-                            </li>
-                            <li>
-                                <a href="pages/maps/yandex.html">YandexMap</a>
-                            </li>
-                            <li>
-                                <a href="pages/maps/jvectormap.html">jVectorMap</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="javascript:void(0);" class="menu-toggle">
-                            <i class="material-icons">trending_down</i>
-                            <span>Multi Level Menu</span>
-                        </a>
-                        <ul class="ml-menu">
-                            <li>
-                                <a href="javascript:void(0);">
-                                    <span>Menu Item</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="javascript:void(0);">
-                                    <span>Menu Item - 2</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="javascript:void(0);" class="menu-toggle">
-                                    <span>Level - 2</span>
-                                </a>
-                                <ul class="ml-menu">
-                                    <li>
-                                        <a href="javascript:void(0);">
-                                            <span>Menu Item</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="javascript:void(0);" class="menu-toggle">
-                                            <span>Level - 3</span>
-                                        </a>
-                                        <ul class="ml-menu">
-                                            <li>
-                                                <a href="javascript:void(0);">
-                                                    <span>Level - 4</span>
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="pages/changelogs.html">
-                            <i class="material-icons">update</i>
-                            <span>Changelogs</span>
-                        </a>
-                    </li>
-                    <li class="header">LABELS</li>
-                    <li>
-                        <a href="javascript:void(0);">
-                            <i class="material-icons col-red">donut_large</i>
-                            <span>Important</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="javascript:void(0);">
-                            <i class="material-icons col-amber">donut_large</i>
-                            <span>Warning</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="javascript:void(0);">
-                            <i class="material-icons col-light-blue">donut_large</i>
-                            <span>Information</span>
-                        </a>
-                    </li>
+                   
                 </ul>
             </div>
             <!-- #Menu -->
             <!-- Footer -->
             <div class="legal">
                 <div class="copyright">
-                    &copy; 2016 <a href="javascript:void(0);">AdminBSB - Material Design</a>.
+                    &copy; 2016 <a href="javascript:void(0);">Administrador-Sisprova</a>.
                 </div>
-                <div class="version">
-                    <b>Version: </b> 1.0.2
-                </div>
+                
             </div>
             <!-- #Footer -->
         </aside>
@@ -792,18 +647,10 @@
 
     <section class="content">
         <div class="container-fluid">
-            <div class="block-header">
-                <h2>DASHBOARD</h2>
-            </div>
-
      
             <div class="row clearfix">
                 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                     <div class="card">
-                        <div class="header">
-                            <h2>CPU USAGE (%)</h2>
-            
-                        </div>
                         <div class="body">
                             @yield('contenido')
                         </div>
