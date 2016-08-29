@@ -22,3 +22,26 @@ Route::get('home', function()
 // -------------------------USUARIOS---------------------------
 Route::get('usuarios', 'UsuarioController@mostrar');
 Route::get('crearUsuarios', 'UsuarioController@formulario');
+Route::post('guardar', 'UsuarioController@guardar');
+ Route::get('eliminarusuario/{id}', 'UsuarioController@eliminar');
+ Route::get('editarusuario/{id}', 'UsuarioController@obtener');
+
+//-----------------Equipo-------------------------------------//
+
+Route::get('equipos', 'EquipoController@mostrar');
+// Route::post('equipos', 'EquipoController@guardar');
+
+// Route::get('crearequipos', 'EquipoController@formulario');
+// Route::get('eliminarequipos/{id}', 'EquipoController@eliminar');
+// Route::get('editarequipos/{id}', 'EquipoController@obtener');
+// Route::post('editarequipos/{id}', 'EquipoController@actualizar');
+
+// //-----------------Tipo Equipo-------------------------------------//
+
+// Route::get('equipos', 'EquipoController@mostrar');
+// Route::post('equipos', 'EquipoController@guardar');
+
+// Route::get('crearequipos', 'EquipoController@formulario');
+// Route::get('eliminarequipos/{id}', 'EquipoController@eliminar');
+// Route::get('editarequipos/{id}', 'EquipoController@obtener');
+// Route::post('editarequipos/{id}', 'EquipoController@actualizar');

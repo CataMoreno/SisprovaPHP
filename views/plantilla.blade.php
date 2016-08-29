@@ -36,6 +36,10 @@
 
     <!-- AdminBSB Themes. You can choose a theme from css/themes instead of get all themes -->
     <link href="css/themes/all-themes.css" rel="stylesheet" />
+
+    <!-- Bootstrap Material Datetime Picker Css -->
+    <link href="plugins/bootstrap-material-datetimepicker/css/bootstrap-material-datetimepicker.css" rel="stylesheet" />
+
 </head>
 
 <body class="theme-red">
@@ -661,6 +665,12 @@
         </div>
     </section>
 
+    <!-- Bootstrap Material Datetime Picker Plugin Js -->
+    <script src="plugins/bootstrap-material-datetimepicker/js/bootstrap-material-datetimepicker.js"></script>
+
+    <!-- Moment Plugin Js -->
+    <script src="plugins/momentjs/moment.js"></script>
+
     <!-- Jquery Core Js -->
     <script src="plugins/jquery/jquery.min.js"></script>
 
@@ -683,6 +693,10 @@
     <script src="plugins/raphael/raphael.min.js"></script>
     <script src="plugins/morrisjs/morris.js"></script>
 
+    <!-- Custom Js -->
+    <script src="js/admin.js"></script>
+    <script src="js/pages/forms/basic-form-elements.js"></script>
+
     <!-- ChartJs -->
     <script src="plugins/chartjs/Chart.bundle.js"></script>
 
@@ -702,6 +716,19 @@
 
     <!-- Demo Js -->
     <script src="js/demo.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+    
 </body>
 
 </html>

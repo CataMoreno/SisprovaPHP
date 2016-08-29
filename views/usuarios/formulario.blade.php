@@ -1,7 +1,7 @@
 @extends('plantilla')
 
 @section('contenido')
-<form method="POST" action="usuarios">
+<form method="POST" action="guardar">
 	<div class="row clearfix">
 	    <div class="col-md-6">
 	        <h3>Datos Personales</h3>
@@ -15,12 +15,17 @@
 	    <div class="form-group form-float">
 	    <div class="form-line">
 	        <input type="text" name="apellido" class="form-control" required>
-	    <label class="form-label">Apellido</label>
+	    <label class="form-label">Apellidos</label>
         </div>
         </div>
 	    <div class="form-group form-float">
 	    <div class="form-line">
-	    
+	     <select class="form-control" name="documento" requiered>
+	    		<option value="">-----Tipo de Documentos----</option>
+	     @foreach( $tipodocumentos as $tipodocumento)
+			<option value="{{ $tipodocumento-> id }}">{{ $tipodocumento-> descripcion }}</option>
+		@endforeach
+		</select>
         </div>
         </div>
 	    <div class="form-group form-float">
@@ -43,7 +48,7 @@
         </div>
 	    <div class="form-group form-float">
 	    <div class="form-line">
-	      <input type="text" name="fecha_nac" class="form-control" required>
+	      <input type="date" name="fecha_nac" class="datepicker form-control" required>
 	    <label class="form-label">Fecha de Nacimiento</label>
         </div>
         </div>
@@ -68,31 +73,35 @@
         </div>
         <div class="form-group form-float">
 	    <div class="form-line success">
-	        <input type="text" class="form-control" required>
-	    <label class="form-label">Tipo de Usuario</label>
+	        <select class="form-control" name="tipousuario" requiered>
+	    		<option value="">-----Tipo de Usuario----</option>
+	     @foreach( $tipousuarios as $tipousuario)
+			<option value="{{ $tipousuario-> id }}">{{ $tipousuario-> nombre }}</option>
+		@endforeach
+		</select>
         </div>
         </div>
         <div class="form-group form-float">
 	    <div class="form-line success">
-	        <input type="text" class="form-control" required>
+	        <input type="text" class="form-control" name"usuario" required>
 	    <label class="form-label">Usuario</label>
         </div>
         </div>
         <div class="form-group form-float">
 	    <div class="form-line success">
-	        <input type="text" class="form-control" required>
+	        <input type="text" class="form-control" name="pass" required>
 	    <label class="form-label">Contraseña</label>
         </div>
         </div>
         <div class="form-group form-float">
 	    <div class="form-line success">
-	        <input type="text" class="form-control"required>
+	        <input type="text" class="form-control"  name="foto" >
 	    <label class="form-label">Foto</label>
         </div>
         </div>
         <div class="form-group form-float">
 	    <div class="form-line success">
-	        <input type="text" class="form-control" required>
+	        <input type="text" class="form-control" name="huella">
 	   <label class="form-label">Huella</label>
         </div>
         </div>

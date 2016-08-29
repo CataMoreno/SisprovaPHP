@@ -2,24 +2,24 @@
 	class Usuario extends Eloquent { 
 	
 		protected $table = 'usuario'; 
-		protected $fillable = array('nombre','apellido','numero_identidad','foto','huella','usuario','contrasena','idcentro','idtipo_usuario','idestado','idtipo_documento','edad','fecha_nacimiento','telefono','direccion'); 
+		protected $fillable = array('nombre','apellido','numero_identidad','foto','huella','usuario','contrasena','idcentro','idtipousuario','idestado','idtipodocumento','edad','fecha_nacimiento','telefono','direccion'); 
 		public $timestamps = false; 
 
 		public function centro(){
 			
 			return $this ->belongsTo('Centro','idcentro');
 	     }
-	     public function tipo_usuario(){
+	     public function tipoUsuario(){
 			
-			return $this ->belongsTo('Tipo_usuario','idtipo_usuario');
+			return $this ->belongsTo('TipoUsuario','idtipousuario');
 	     }
 	     public function estado(){
 			
 			return $this ->belongsTo('Estado','idestado');
 	     }
-	     public function tipo_documento(){
+	     public function tipoDocumento(){
 			
-			return $this ->belongsTo('Tipo_documento','idtipo_documento');
+			return $this ->belongsTo('TipoDocumento','idtipodocumento');
 	     }
 	}
 
