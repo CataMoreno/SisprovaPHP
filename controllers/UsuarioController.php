@@ -54,24 +54,38 @@
 
 		}
 
-		public function obtener($id){
+		public function obtener(){
 
-			$usuario = Usuario::find($id);
+			$usuario = Usuario::all();
 			$centros = Centro::all();
-			return View::make('usuarios.editar', ['usuario' => $usuario ,'centros' => $centros]);
+			$estados = Estado::all();
+			$tipousuarios = TipoUsuario::all();
+			$tipodocumentos = TipoDocumento::all();
+			return View::make('usuarios.editar', ['usuario' => $usuario ,'centros' => $centros,'estados' => $estados,'tipousuarios' => $tipousuarios,'tipodocumentos' => $tipodocumentos]);
 			
 		}
 
 		public function actualizar($id){
 
-			$materia = Materia::find($id);
-			$materia->nombre = Input::get('nombre');
-			$materia->jornada = Input::get('jornada');
-			$materia->dias = implode(',', Input::get('dias'));
-			$materia->id_profesor = Input::get('profesor');
-			$materia->save();
+			$usuario = Usuario::find($id);
+			$usuario->nombre = Input::get('nombre');
+			$usuario->apellido = Input::get('apellido');
+			$usuario->numero_identidad = Input::get('numero_identidad');
+			$usuario->foto = Input::get('foto');
+			$usuario->huella = Input::get('huella');
+			$usuario->usuario = Input::get('usuario');
+			$usuario->contrasena= Input::get('pass');
+			$usuario->idcentro = Input::get('centro');
+			$usuario->idtipousurio = Input::get('tipousuario');
+			$usuario->idestado = Input::get('estado');
+			$usuario->idtipodocumento = Input::get('documento');
+			$usuario->edad = Input::get('edad');
+			$usuario->fecha_nacimiento= Input::get('fecha_nac');
+			$usuario->telefono = Input::get('telefono');
+			$usuario->direccion = Input::get('direccion');
+			$usuario->save();
 
-			return Redirect::to('materias')->with('mensaje3', 'Registro Editado!');
+			return Redirect::to('usuarios');
 		}
   }
 ?>

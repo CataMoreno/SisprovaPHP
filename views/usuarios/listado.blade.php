@@ -38,7 +38,7 @@
 				<td>{{ $usuario->tipoUsuario->nombre}}</td>
 				<td>{{ $usuario->estado->nombre}}</td>
 				<td>
-					<a href="editarusuario/{{ $usuario->id}}" class="btn btn-default">
+					<a href="editarusuario/{{ $usuario->id }}" class="btn btn-default">
 						<i class="material-icons">create</i>
 					</a></td>
 				<td>

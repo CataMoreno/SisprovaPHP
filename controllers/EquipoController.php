@@ -34,7 +34,7 @@ class EquipoController extends BaseController {
 			
 			$equipos = Equipo::find($id);
 			$equipos->delete();
-			return Redirect::to('equipos')->with('mensaje2', 'Registro Eliminado!');
+			return Redirect::to('equipos');
 
 		}
 
@@ -42,9 +42,9 @@ class EquipoController extends BaseController {
 
 			$equipos = Equipo::find($id);
 			$usuarios = Usuario::all();
-			$tipo_equipos = Tipo_equipo::all();
+			$tipoequipos = Tipoequipo::all();
 			$estados = Estado::all();
-			return View::make('equipos.editar',['usuario' => $usuario,'tipo_equipo' => $tipo_equipos,'estado'=>$estados]);
+			return View::make('equipo.editar',['equipo' => $equipos,'tipoequipo' => $tipoequipos,'estados'=>$estados]);
 		}
 
 		public function actualizar($id){
