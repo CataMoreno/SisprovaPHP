@@ -37,6 +37,11 @@ Route::get('eliminarequipos/{id}', 'EquipoController@eliminar');
 Route::get('editarequipos/{id}', 'EquipoController@obtener');
 Route::post('editarequipos/{id}', 'EquipoController@actualizar');
 
+// -------------------------OPERARIOS---------------------------
+Route::get('operarios', 'OperarioController@mostrar');
+Route::get('crearOperarios', 'OperarioController@formulario');
+
+
 // //-----------------Tipo Equipo-------------------------------------//
 
 // Route::get('equipos', 'EquipoController@mostrar');

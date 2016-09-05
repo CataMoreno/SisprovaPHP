@@ -107,7 +107,7 @@
         <div class="form-group form-float">
 	    <div class="form-line success">
 	    	<label>Nombre de usuario</label>
-	        <input type="text" class="form-control" name"user" value="{{ $usuario->user }}" required>
+	        <input type="text" class="form-control" name"user" value="{{  $usuario->user }}" required>
         </div>
         </div>
         <div class="form-group form-float">
