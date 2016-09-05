@@ -306,25 +306,28 @@
             <div class="menu">
                 <ul class="list">
                     <li class="header">MENÚ</li>
-                    <li class="active">
+                    @yield('accion')
                         <a href="{{ url() }}/home">
                             <i class="material-icons">home</i>
                             <span>Inicio</span>
                         </a>
                     </li>
                     <li>
+                        @yield('accion1')
                         <a href="{{ url() }}/usuarios">
                             <i class="material-icons">account_circle</i>
                             <span>Usuarios</span>
                         </a>
                     </li>
                     <li>
+                        @yield('accion2')
                         <a href="{{ url() }}/equipos">
                             <i class="material-icons">computer</i>
                             <span>Equipos</span>
                         </a>
                     </li>
                     <li>
+                         @yield('accion3')
                         <a href="{{ url() }}/vehiculos" class="menu-toggle">
                             <i class="material-icons">directions_car</i>
                             <span>Vehiculos</span>

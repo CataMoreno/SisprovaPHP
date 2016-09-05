@@ -27,8 +27,8 @@
 			$datos['numero_identidad'] = Input::get('numero_identidad');
 			$datos['foto'] = Input::get('foto');
 			$datos['huella'] = Input::get('huella');
-			$datos['usuario'] = Input::get('usuario');
-			$datos['contraseña'] = Input::get('pass');
+			$datos['user'] = Input::get('user');
+			$datos['contrasena'] = Input::get('pass');
 			$datos['idcentro'] = Input::get('centro');
 			$datos['idtipousuario'] = Input::get('tipousuario');
 			$datos['idestado'] = Input::get('estado');
@@ -54,9 +54,9 @@
 
 		}
 
-		public function obtener(){
+		public function obtener($id){
 
-			$usuario = Usuario::all();
+			$usuario = Usuario::find($id);
 			$centros = Centro::all();
 			$estados = Estado::all();
 			$tipousuarios = TipoUsuario::all();
@@ -73,10 +73,10 @@
 			$usuario->numero_identidad = Input::get('numero_identidad');
 			$usuario->foto = Input::get('foto');
 			$usuario->huella = Input::get('huella');
-			$usuario->usuario = Input::get('usuario');
+			$usuario->user = Input::get('user');
 			$usuario->contrasena= Input::get('pass');
 			$usuario->idcentro = Input::get('centro');
-			$usuario->idtipousurio = Input::get('tipousuario');
+			$usuario->idtipousuario = Input::get('tipousuario');
 			$usuario->idestado = Input::get('estado');
 			$usuario->idtipodocumento = Input::get('documento');
 			$usuario->edad = Input::get('edad');

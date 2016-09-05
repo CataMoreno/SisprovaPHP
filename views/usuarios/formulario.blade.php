@@ -49,7 +49,6 @@
 	    <div class="form-group form-float">
 	    <div class="form-line">
 	      <input type="date" name="fecha_nac" class="datepicker form-control" required>
-	    <label class="form-label">Fecha de Nacimiento</label>
         </div>
         </div>
 	    <div class="form-group form-float">
@@ -83,7 +82,7 @@
         </div>
         <div class="form-group form-float">
 	    <div class="form-line success">
-	        <input type="text" class="form-control" name"usuario" required>
+	        <input type="text" class="form-control" name"user" required>
 	    <label class="form-label">Usuario</label>
         </div>
         </div>

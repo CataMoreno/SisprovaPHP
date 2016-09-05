@@ -2,7 +2,7 @@
 	class Usuario extends Eloquent { 
 	
 		protected $table = 'usuario'; 
-		protected $fillable = array('nombre','apellido','numero_identidad','foto','huella','usuario','contrasena','idcentro','idtipousuario','idestado','idtipodocumento','edad','fecha_nacimiento','telefono','direccion'); 
+		protected $fillable = array('nombre','apellido','numero_identidad','foto','huella','user','contrasena','idcentro','idtipousuario','idestado','idtipodocumento','edad','fecha_nacimiento','telefono','direccion'); 
 		public $timestamps = false; 
 
 		public function centro(){

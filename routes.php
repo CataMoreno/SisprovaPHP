@@ -24,8 +24,8 @@ Route::get('usuarios', 'UsuarioController@mostrar');
 Route::get('crearUsuarios', 'UsuarioController@formulario');
 Route::post('guardar', 'UsuarioController@guardar');
  Route::get('eliminarusuario/{id}', 'UsuarioController@eliminar');
- Route::get('editarusuario', 'UsuarioController@obtener');
- //Route::post('editar/{id}', 'UsuarioController@actualizar');
+ Route::get('editarusuario/{id}', 'UsuarioController@obtener');
+ Route::post('editarusuario/{id}', 'UsuarioController@actualizar');
 
 //-----------------Equipo-------------------------------------//
 

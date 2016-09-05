@@ -1,5 +1,10 @@
 @extends('plantilla')
 
+@section('accion')
+<li class="active">
+  @stop()
+
+
 @section('contenido')
 
 <h1>SISTEMA DE INGRESOS Y SALIDAS DEL SENA</h1>

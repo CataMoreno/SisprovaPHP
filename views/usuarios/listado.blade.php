@@ -1,4 +1,7 @@
 @extends('plantilla')
+@section('accion1')
+<li class="active">
+	@stop()
 
 @section('contenido')
 <h1>USUARIOS</h1>
