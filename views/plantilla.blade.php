@@ -7,38 +7,39 @@
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
     <title>Bienvenidos a| SISPROVA</title>
     <!-- Favicon-->
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="{{ url() }}/favicon.ico" type="image/x-icon">
 
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&subset=latin,cyrillic-ext" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" type="text/css">
-    <link href="plugins/bootstrap-select/css/bootstrap-select.css" rel="stylesheet" />
+    <link href="{{ url() }}/plugins/bootstrap-select/css/bootstrap-select.css" rel="stylesheet" />
     <!-- Bootstrap Core Css -->
-    <link href="plugins/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link href="{{ url() }}/plugins/bootstrap/css/bootstrap.css" rel="stylesheet">
+
 
     <!-- Waves Effect Css -->
-    <link href="plugins/node-waves/waves.css" rel="stylesheet" />
+    <link href="{{ url() }}/plugins/node-waves/waves.css" rel="stylesheet" />
 
     <!-- Animation Css -->
-    <link href="plugins/animate-css/animate.css" rel="stylesheet" />
+    <link href="{{ url() }}/plugins/animate-css/animate.css" rel="stylesheet" />
 
     <!-- Preloader Css -->
-    <link href="plugins/material-design-preloader/md-preloader.css" rel="stylesheet" />
+    <link href="{{ url() }}/plugins/material-design-preloader/md-preloader.css" rel="stylesheet" />
 
     <!-- Morris Chart Css-->
-    <link href="plugins/morrisjs/morris.css" rel="stylesheet" />
+    <link href="{{ url() }}/plugins/morrisjs/morris.css" rel="stylesheet" />
 
     <!-- Custom Css -->
-    <link href="css/style.css" rel="stylesheet">
+    <link href="{{ url() }}/css/style.css" rel="stylesheet">
 
     <!-- JQuery DataTable Css -->
-    <link href="plugins/jquery-datatable/skin/bootstrap/css/dataTables.bootstrap.css" rel="stylesheet">
+    <link href="{{ url() }}/plugins/jquery-datatable/skin/bootstrap/css/dataTables.bootstrap.css" rel="stylesheet">
 
     <!-- AdminBSB Themes. You can choose a theme from css/themes instead of get all themes -->
-    <link href="css/themes/all-themes.css" rel="stylesheet" />
+    <link href="{{ url() }}/css/themes/all-themes.css" rel="stylesheet" />
 
     <!-- Bootstrap Material Datetime Picker Css -->
-    <link href="plugins/bootstrap-material-datetimepicker/css/bootstrap-material-datetimepicker.css" rel="stylesheet" />
+    <link href="{{ url() }}/plugins/bootstrap-material-datetimepicker/css/bootstrap-material-datetimepicker.css" rel="stylesheet" />
 
 </head>
 
@@ -73,18 +74,18 @@
     <nav class="navbar">
         <div class="container-fluid">
             <div class="navbar-header">
-                <a href="javascript:void(0);" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false"></a>
-                <a href="javascript:void(0);" class="bars"></a>
-                <a class="navbar-brand" href="index.html">ADMINISTRADOR</a>
+                <a href="{{ url() }}/javascript:void(0);" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false"></a>
+                <a href="{{ url() }}/javascript:void(0);" class="bars"></a>
+                <a class="navbar-brand" href="{{ url() }}/index.html">ADMINISTRADOR</a>
             </div>
             <div class="collapse navbar-collapse" id="navbar-collapse">
                 <ul class="nav navbar-nav navbar-right">
                     <!-- Call Search -->
-                    <li><a href="javascript:void(0);" class="js-search" data-close="true"><i class="material-icons">search</i></a></li>
+                    <li><a href="{{ url() }}/javascript:void(0);" class="js-search" data-close="true"><i class="material-icons">search</i></a></li>
                     <!-- #END# Call Search -->
                     <!-- Notifications -->
                     <li class="dropdown">
-                        <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button">
+                        <a href="{{ url() }}/javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button">
                             <i class="material-icons">notifications</i>
                             <span class="label-count">7</span>
                         </a>
@@ -93,7 +94,7 @@
                             <li class="body">
                                 <ul class="menu">
                                     <li>
-                                        <a href="javascript:void(0);">
+                                        <a href="{{ url() }}/javascript:void(0);">
                                             <div class="icon-circle bg-light-green">
                                                 <i class="material-icons">Agregar Usuarios</i>
                                             </div>
@@ -106,7 +107,7 @@
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="javascript:void(0);">
+                                        <a href="{{ url() }}/javascript:void(0);">
                                             <div class="icon-circle bg-cyan">
                                                 <i class="material-icons">add_shopping_cart</i>
                                             </div>
@@ -119,7 +120,7 @@
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="javascript:void(0);">
+                                        <a href="{{ url() }}/javascript:void(0);">
                                             <div class="icon-circle bg-red">
                                                 <i class="material-icons">delete_forever</i>
                                             </div>
@@ -132,7 +133,7 @@
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="javascript:void(0);">
+                                        <a href="{{ url() }}/javascript:void(0);">
                                             <div class="icon-circle bg-orange">
                                                 <i class="material-icons">mode_edit</i>
                                             </div>
@@ -145,7 +146,7 @@
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="javascript:void(0);">
+                                        <a href="{{ url() }}/javascript:void(0);">
                                             <div class="icon-circle bg-blue-grey">
                                                 <i class="material-icons">comment</i>
                                             </div>
@@ -171,7 +172,7 @@
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="javascript:void(0);">
+                                        <a href="{{ url() }}/javascript:void(0);">
                                             <div class="icon-circle bg-purple">
                                                 <i class="material-icons">settings</i>
                                             </div>
@@ -186,14 +187,14 @@
                                 </ul>
                             </li>
                             <li class="footer">
-                                <a href="javascript:void(0);">Ver todas las  Notificacions</a>
+                                <a href="{{ url() }}/javascript:void(0);">Ver todas las  Notificacions</a>
                             </li>
                         </ul>
                     </li>
                     <!-- #END# Notifications -->
                     <!-- Tasks -->
                     <li class="dropdown">
-                        <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button">
+                        <a href="{{ url() }}/javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button">
                             <i class="material-icons">flag</i>
                             <span class="label-count">9</span>
                         </a>
@@ -202,7 +203,7 @@
                             <li class="body">
                                 <ul class="menu tasks">
                                     <li>
-                                        <a href="javascript:void(0);">
+                                        <a href="{{ url() }}/javascript:void(0);">
                                             <h4>
                                                 Footer display issue
                                                 <small>32%</small>
@@ -214,7 +215,7 @@
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="javascript:void(0);">
+                                        <a href="{{ url() }}/javascript:void(0);">
                                             <h4>
                                                 Make new buttons
                                                 <small>45%</small>
@@ -226,7 +227,7 @@
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="javascript:void(0);">
+                                        <a href="{{ url() }}/javascript:void(0);">
                                             <h4>
                                                 Create new dashboard
                                                 <small>54%</small>
@@ -238,7 +239,7 @@
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="javascript:void(0);">
+                                        <a href="{{ url() }}/javascript:void(0);">
                                             <h4>
                                                 Solve transition issue
                                                 <small>65%</small>
@@ -250,7 +251,7 @@
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="javascript:void(0);">
+                                        <a href="{{ url() }}/javascript:void(0);">
                                             <h4>
                                                 Answer GitHub questions
                                                 <small>92%</small>
@@ -264,7 +265,7 @@
                                 </ul>
                             </li>
                             <li class="footer">
-                                <a href="javascript:void(0);">View All Tasks</a>
+                                <a href="{{ url() }}/javascript:void(0);">View All Tasks</a>
                             </li>
                         </ul>
                     </li>
@@ -281,7 +282,7 @@
             <!-- User Info -->
             <div class="user-info">
                 <div class="image">
-                    <img src="images/user.png" width="48" height="48" alt="User" />
+                    <img src="{{ url() }}/images/user.png" width="48" height="48" alt="User" />
                 </div>
                 <div class="info-container">
                     <div class="name" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">John Doe</div>
@@ -289,13 +290,13 @@
                     <div class="btn-group user-helper-dropdown">
                         <i class="material-icons" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">keyboard_arrow_down</i>
                         <ul class="dropdown-menu pull-right">
-                            <li><a href="javascript:void(0);"><i class="material-icons">person</i>Profile</a></li>
+                            <li><a href="{{ url() }}/javascript:void(0);"><i class="material-icons">person</i>Profile</a></li>
                             <li role="seperator" class="divider"></li>
-                            <li><a href="javascript:void(0);"><i class="material-icons">group</i>Followers</a></li>
-                            <li><a href="javascript:void(0);"><i class="material-icons">shopping_cart</i>Sales</a></li>
-                            <li><a href="javascript:void(0);"><i class="material-icons">favorite</i>Likes</a></li>
+                            <li><a href="{{ url() }}/javascript:void(0);"><i class="material-icons">group</i>Followers</a></li>
+                            <li><a href="{{ url() }}/javascript:void(0);"><i class="material-icons">shopping_cart</i>Sales</a></li>
+                            <li><a href="{{ url() }}/javascript:void(0);"><i class="material-icons">favorite</i>Likes</a></li>
                             <li role="seperator" class="divider"></li>
-                            <li><a href="javascript:void(0);"><i class="material-icons">input</i>Sign Out</a></li>
+                            <li><a href="{{ url() }}/javascript:void(0);"><i class="material-icons">input</i>Sign Out</a></li>
                         </ul>
                     </div>
                 </div>
@@ -304,191 +305,51 @@
             <!-- Menu -->
             <div class="menu">
                 <ul class="list">
-                    <li class="header">MAIN NAVIGATION</li>
+                    <li class="header">MENÚ</li>
                     <li class="active">
-                        <a href="home">
+                        <a href="{{ url() }}/home">
                             <i class="material-icons">home</i>
                             <span>Inicio</span>
                         </a>
                     </li>
                     <li>
-                        <a href="usuarios">
+                        <a href="{{ url() }}/usuarios">
                             <i class="material-icons">account_circle</i>
                             <span>Usuarios</span>
                         </a>
                     </li>
                     <li>
-                        <a href="equipos">
+                        <a href="{{ url() }}/equipos">
                             <i class="material-icons">computer</i>
                             <span>Equipos</span>
                         </a>
                     </li>
                     <li>
-                        <a href="vehiculos" class="menu-toggle">
+                        <a href="{{ url() }}/vehiculos" class="menu-toggle">
                             <i class="material-icons">directions_car</i>
                             <span>Vehiculos</span>
                         </a>
-                        <ul class="ml-menu">
-                            <li>
-                                <a href="javascript:void(0);" class="menu-toggle">
-                                    <span>Cards</span>
-                                </a>
-                                <ul class="ml-menu">
-                                    <li>
-                                        <a href="pages/widgets/cards/basic.html">Basic</a>
-                                    </li>
-                                    <li>
-                                        <a href="pages/widgets/cards/colored.html">Colored</a>
-                                    </li>
-                                    <li>
-                                        <a href="pages/widgets/cards/no-header.html">No Header</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="javascript:void(0);" class="menu-toggle">
-                                    <span>Infobox</span>
-                                </a>
-                                <ul class="ml-menu">
-                                    <li>
-                                        <a href="pages/widgets/infobox/infobox-1.html">Infobox-1</a>
-                                    </li>
-                                    <li>
-                                        <a href="pages/widgets/infobox/infobox-2.html">Infobox-2</a>
-                                    </li>
-                                    <li>
-                                        <a href="pages/widgets/infobox/infobox-3.html">Infobox-3</a>
-                                    </li>
-                                    <li>
-                                        <a href="pages/widgets/infobox/infobox-4.html">Infobox-4</a>
-                                    </li>
-                                    <li>
-                                        <a href="pages/widgets/infobox/infobox-5.html">Infobox-5</a>
-                                    </li>
-                                </ul>
-                            </li>
-                        </ul>
                     </li>
                     <li>
-                        <a href="operarios" class="menu-toggle">
+                        <a href="{{ url() }}/operarios" class="menu-toggle">
                            <i class="material-icons">group</i>
                             <span>Operarios</span>
                         </a>
-                        <ul class="ml-menu">
-                            <li>
-                                <a href="pages/ui/alerts.html">Alerts</a>
-                            </li>
-                            <li>
-                                <a href="pages/ui/animations.html">Animations</a>
-                            </li>
-                            <li>
-                                <a href="pages/ui/badges.html">Badges</a>
-                            </li>
-
-                            <li>
-                                <a href="pages/ui/breadcrumbs.html">Breadcrumbs</a>
-                            </li>
-                            <li>
-                                <a href="pages/ui/buttons.html">Buttons</a>
-                            </li>
-                            <li>
-                                <a href="pages/ui/collapse.html">Collapse</a>
-                            </li>
-                            <li>
-                                <a href="pages/ui/colors.html">Colors</a>
-                            </li>
-                            <li>
-                                <a href="pages/ui/dialogs.html">Dialogs</a>
-                            </li>
-                            <li>
-                                <a href="pages/ui/icons.html">Icons</a>
-                            </li>
-                            <li>
-                                <a href="pages/ui/labels.html">Labels</a>
-                            </li>
-                            <li>
-                                <a href="pages/ui/list-group.html">List Group</a>
-                            </li>
-                            <li>
-                                <a href="pages/ui/media-object.html">Media Object</a>
-                            </li>
-                            <li>
-                                <a href="pages/ui/modals.html">Modals</a>
-                            </li>
-                            <li>
-                                <a href="pages/ui/notifications.html">Notifications</a>
-                            </li>
-                            <li>
-                                <a href="pages/ui/pagination.html">Pagination</a>
-                            </li>
-                            <li>
-                                <a href="pages/ui/preloaders.html">Preloaders</a>
-                            </li>
-                            <li>
-                                <a href="pages/ui/progressbars.html">Progress Bars</a>
-                            </li>
-                            <li>
-                                <a href="pages/ui/range-sliders.html">Range Sliders</a>
-                            </li>
-                            <li>
-                                <a href="pages/ui/sortable-nestable.html">Sortable & Nestable</a>
-                            </li>
-                            <li>
-                                <a href="pages/ui/tabs.html">Tabs</a>
-                            </li>
-                            <li>
-                                <a href="pages/ui/thumbnails.html">Thumbnails</a>
-                            </li>
-                            <li>
-                                <a href="pages/ui/tooltips-popovers.html">Tooltips & Popovers</a>
-                            </li>
-                            <li>
-                                <a href="pages/ui/waves.html">Waves</a>
-                            </li>
-                        </ul>
+                     
                     </li>
                     <li>
-                        <a href="ingresos" class="menu-toggle">
+                        <a href="{{ url() }}/ingresos" class="menu-toggle">
                             <i class="material-icons">assignment</i>
                             <span>Ingresos</span>
                         </a>
-                        <ul class="ml-menu">
-                            <li>
-                                <a href="pages/forms/basic-form-elements.html">Basic Form Elements</a>
-                            </li>
-                            <li>
-                                <a href="pages/forms/advanced-form-elements.html">Advanced Form Elements</a>
-                            </li>
-                            <li>
-                                <a href="pages/forms/form-examples.html">Form Examples</a>
-                            </li>
-                            <li>
-                                <a href="pages/forms/form-validation.html">Form Validation</a>
-                            </li>
-                            <li>
-                                <a href="pages/forms/form-wizard.html">Form Wizard</a>
-                            </li>
-                            <li>
-                                <a href="pages/forms/editors.html">Editors</a>
-                            </li>
-                        </ul>
+                 
                     </li>
                     <li>
-                        <a href="salidas" class="menu-toggle">
+                        <a href="{{ url() }}/salidas" class="menu-toggle">
                            <i class="material-icons">keyboard_tab</i>
                             <span>Salidas</span>
                         </a>
-                        <ul class="ml-menu">
-                            <li>
-                                <a href="pages/tables/normal-tables.html">Normal Tables</a>
-                            </li>
-                            <li>
-                                <a href="pages/tables/jquery-datatable.html">Jquery Datatables</a>
-                            </li>
-                            <li>
-                                <a href="pages/tables/editable-table.html">Editable Tables</a>
-                            </li>
-                        </ul>
+                      
                     </li>
                    
                 </ul>
@@ -497,7 +358,7 @@
             <!-- Footer -->
             <div class="legal">
                 <div class="copyright">
-                    &copy; 2016 <a href="javascript:void(0);">Administrador-Sisprova</a>.
+                    &copy; 2016 <a href="{{ url() }}/javascript:void(0);">Administrador-Sisprova</a>.
                 </div>
                 
             </div>
@@ -507,8 +368,8 @@
         <!-- Right Sidebar -->
         <aside id="rightsidebar" class="right-sidebar">
             <ul class="nav nav-tabs tab-nav-right" role="tablist">
-                <li role="presentation" class="active"><a href="#skins" data-toggle="tab">SKINS</a></li>
-                <li role="presentation"><a href="#settings" data-toggle="tab">SETTINGS</a></li>
+                <li role="presentation" class="active"><a href="{{ url() }}/#skins" data-toggle="tab">SKINS</a></li>
+                <li role="presentation"><a href="{{ url() }}/#settings" data-toggle="tab">SETTINGS</a></li>
             </ul>
             <div class="tab-content">
                 <div role="tabpanel" class="tab-pane fade in active in active" id="skins">
@@ -666,32 +527,32 @@
     </section>
 
     <!-- Bootstrap Material Datetime Picker Plugin Js -->
-    <script src="plugins/bootstrap-material-datetimepicker/js/bootstrap-material-datetimepicker.js"></script>
+    <script src="{{ url() }}/plugins/bootstrap-material-datetimepicker/js/bootstrap-material-datetimepicker.js"></script>
 
     <!-- Moment Plugin Js -->
-    <script src="plugins/momentjs/moment.js"></script>
+    <script src="{{ url() }}/plugins/momentjs/moment.js"></script>
 
     <!-- Jquery Core Js -->
-    <script src="plugins/jquery/jquery.min.js"></script>
+    <script src="{{ url() }}/plugins/jquery/jquery.min.js"></script>
 
     <!-- Bootstrap Core Js -->
-    <script src="plugins/bootstrap/js/bootstrap.js"></script>
+    <script src="{{ url() }}/plugins/bootstrap/js/bootstrap.js"></script>
 
     <!-- Select Plugin Js -->
-    <script src="plugins/bootstrap-select/js/bootstrap-select.js"></script>
+    <script src="{{ url() }}/plugins/bootstrap-select/js/bootstrap-select.js"></script>
 
     <!-- Slimscroll Plugin Js -->
-    <script src="plugins/jquery-slimscroll/jquery.slimscroll.js"></script>
+    <script src="{{ url() }}/plugins/jquery-slimscroll/jquery.slimscroll.js"></script>
 
     <!-- Waves Effect Plugin Js -->
-    <script src="plugins/node-waves/waves.js"></script>
+    <script src="{{ url() }}/plugins/node-waves/waves.js"></script>
 
     <!-- Jquery CountTo Plugin Js -->
-    <script src="plugins/jquery-countto/jquery.countTo.js"></script>
+    <script src="{{ url() }}/plugins/jquery-countto/jquery.countTo.js"></script>
 
     <!-- Morris Plugin Js -->
-    <script src="plugins/raphael/raphael.min.js"></script>
-    <script src="plugins/morrisjs/morris.js"></script>
+    <script src="{{ url() }}/plugins/raphael/raphael.min.js"></script>
+    <script src="{{ url() }}/plugins/morrisjs/morris.js"></script>
 
     <!-- Custom Js -->
     <script src="js/admin.js"></script>
@@ -701,21 +562,21 @@
     <script src="plugins/chartjs/Chart.bundle.js"></script>
 
     <!-- Flot Charts Plugin Js -->
-    <script src="plugins/flot-charts/jquery.flot.js"></script>
-    <script src="plugins/flot-charts/jquery.flot.resize.js"></script>
-    <script src="plugins/flot-charts/jquery.flot.pie.js"></script>
-    <script src="plugins/flot-charts/jquery.flot.categories.js"></script>
-    <script src="plugins/flot-charts/jquery.flot.time.js"></script>
+    <script src="{{ url() }}/plugins/flot-charts/jquery.flot.js"></script>
+    <script src="{{ url() }}/plugins/flot-charts/jquery.flot.resize.js"></script>
+    <script src="{{ url() }}/plugins/flot-charts/jquery.flot.pie.js"></script>
+    <script src="{{ url() }}/plugins/flot-charts/jquery.flot.categories.js"></script>
+    <script src="{{ url() }}/plugins/flot-charts/jquery.flot.time.js"></script>
 
     <!-- Sparkline Chart Plugin Js -->
-    <script src="plugins/jquery-sparkline/jquery.sparkline.js"></script>
+    <script src="{{ url() }}/plugins/jquery-sparkline/jquery.sparkline.js"></script>
 
     <!-- Custom Js -->
-    <script src="js/admin.js"></script>
-    <script src="js/pages/index.js"></script>
+    <script src="{{ url() }}/js/admin.js"></script>
+    <script src="{{ url() }}/js/pages/index.js"></script>
 
     <!-- Demo Js -->
-    <script src="js/demo.js"></script>
+    <script src="{{ url() }}/js/demo.js"></script>
 
 
 
